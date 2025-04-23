@@ -1,0 +1,35 @@
+*{margin: 0px; padding: 0px;}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{font-family: "Lato", sans-serif; font-size: 14px;}
+
+.bg-green{background: #008900;}
+
+.headerFill .top-strip{padding: 8px 0px;}
+.headerFill .top-strip p{color: #fff; font-size: 12px; font-weight: 500;}
+
+.headerFill .header{width: 100%; height: auto; padding: 10px 0px;}
+.logoFill img{width: 100%;}
+
+.headerFill .header .part2 .placeDrop{width: 170px; height: 60px; min-width: 170px; color: #000 !important; border: 1px solid rgba(0,0,0,0.10) !important; border-radius: 7px !important; padding: 10px 15px !important;}
+.headerFill .header .part2 .placeDrop{text-align: left; justify-content: flex-start !important;}
+.headerFill .header .part2 .placeDrop  .label{font-size: 12px !important; text-transform: capitalize !important; color: rgba(0,0,0,0.4) !important; line-height: 16px;}
+.headerFill .header .part2 .placeDrop  .name{font-size: 14px !important; text-transform: capitalize !important; color: #333ad8 !important; font-weight: 700; line-height: 16px;}
+
+.headerFill .header .part2 .placeDrop span.ml-auto svg{opacity: 0.7;}
+
+header .headerSearch{width: 60%; height: 60px; background: #f4f4f4; padding: 10px; position: relative; border-radius: 5px; border: 1px solid rgba(0,0,0,0.1);}
+header .headerSearch input{background: transparent !important; outline: none !important; font-size: 15px; color: rgba(0,0,0,0.8); width: 100%; height: 40px; border: 0px !important; padding: 0px 20px;}
+
+header .headerSearch input::-webkit-input-placeholder{color: rgba(0,0,0,0.6);}
+
+header .headerSearch button{position: absolute; top: 10px; right: 15px; z-index: 100; min-width: 40px !important; height: 40px !important; width: 40px !important; border-radius: 50% !important; color: #000;}
+header .headerSearch button svg{font-size: 20px;}
+
+header .part3 .circle{align-items: center; justify-content: center; min-width: 45px !important; height: 45px !important; width: 45px !important; border-radius: 50% !important; border: 1px solid rgba(0,0,0,0.1) !important; color: #000;}
+header .part3 .circle svg{font-size: 20px;}
+
+.cartTotal .price{font-size: 16px; color: rgba(0,0,0,0.8); font-weight: 700;}
+.cartTotal button{background: #fcf5f1 !important;}
+.cartTotal button svg{color: #fa5230 !important;}
+.cartTotal .count{position: absolute; top: -6px; right: -4px; background: #fa5230; border-radius: 50%; color: #fff; width: 20px; height: 20px;}
