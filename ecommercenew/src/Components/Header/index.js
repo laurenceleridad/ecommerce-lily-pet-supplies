@@ -2,10 +2,12 @@
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/images/lilylogo.png';
 import PlaceDropDown from '../PlaceDropDown';
-import { IoIosSearch } from "react-icons/io";
+
 import { Button } from '@mui/material';
 import { AiOutlineUser } from "react-icons/ai";
 import { IoBagHandleOutline } from "react-icons/io5";
+import SearchBox from './SearchBox';
+import Navigation from './Navigation';
 
 const Header =()=>{
     return(
@@ -26,13 +28,8 @@ const Header =()=>{
 
                             <div className='col-sm-10 d-flex align-items-center part2'>
                                 <PlaceDropDown />
-
-                                {/* Header Search Starts Here*/}
-                                    <div className='headerSearch ml-3 mr-3'>
-                                        <input type='text' placeholder='Search for products...'/>
-                                        <Button><IoIosSearch /></Button>
-                                    </div>
-                                {/* Header Search Ends Here*/}
+                                <SearchBox />
+                                
             
                             <div className='d-flex align-items-center part3 ml-auto'>    
                                 <Button className='circle mr-3'><AiOutlineUser /></Button>
@@ -49,6 +46,9 @@ const Header =()=>{
                         </div>
                     </div>
                 </header>
+
+                <Navigation />
+                
             </div>
         </>
     )
