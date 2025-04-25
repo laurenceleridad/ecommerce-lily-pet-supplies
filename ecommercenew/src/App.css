@@ -15,6 +15,8 @@ body{font-family: "Lato", sans-serif; font-size: 14px;}
 ::-webkit-scrollbar-thumb{background: #ccc !important;}
 ::-webkit-scrollbar-track{background: transparent !important;}
 
+.headerFill{border-bottom: 1px solid rgba(0,0,0,0.1); padding-bottom:10px;}
+
 .headerFill .top-strip{padding: 8px 0px;}
 .headerFill .top-strip p{color: #fff; font-size: 12px; font-weight: 500;}
 
@@ -51,6 +53,9 @@ header .part3 .circle svg{font-size: 20px;}
 .locModal .locationList li{width: 100%; list-style: none;}
 .locModal .locationList li button{width: 100%; text-transform: capitalize !important; color: #000 !important; justify-content: flex-start !important; padding: 10px 20px;}
 
+.locModal .locationList li button:hover{background: #f1f1f1;}
+.locModal .locationList li button.active{background: #e2e2e2 !important;}
+
 .locModal .closeB{position: absolute; top: 10px; right: 10px; color: #000 !important; min-width: 40px !important; width: 40px !important; height: 40px !important; border-radius: 50% !important;}
 .locModal .closeB svg{font-size: 22px;}
 
@@ -69,7 +74,7 @@ nav .allCat .icon2 svg{font-size: 15px !important;}
 
 nav .nav2 ul{margin-bottom: 0px;}
 nav .nav2 ul li a{text-decoration: none;}
-nav .nav2 ul li a button{font-size: 14px !important; font-weight: 600; text-decoration: none; color: rgba(0,0,0,0.6); text-transform: uppercase; display: flex; align-items: center; padding: 8px 20px; transition: all 0.2s ease-in-out; border-radius: 25px;}
+nav .nav2 ul li a button{font-size: 14px !important; font-weight: 600; text-decoration: none; color: rgba(0,0,0,0.6); text-transform: uppercase; display: flex; align-items: center; padding: 8px 15px; transition: all 0.2s ease-in-out; border-radius: 25px;}
 nav .nav2 ul li a svg{font-size: 20px;}
 
 nav .nav2 ul li a:hover{background: #eafce3; color: #73da4c;}

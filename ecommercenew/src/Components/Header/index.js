@@ -8,8 +8,15 @@ import { AiOutlineUser } from "react-icons/ai";
 import { IoBagHandleOutline } from "react-icons/io5";
 import SearchBox from './SearchBox';
 import Navigation from './Navigation';
+import { MyContext } from '../../App';
+import { useContext } from 'react';
 
 const Header =()=>{
+
+    const context = useContext(MyContext) || {};
+    const locationList = context.locationList || [];
+
+
     return(
         <>
             <div className="headerFill">
@@ -27,7 +34,12 @@ const Header =()=>{
                             </div>
 
                             <div className='col-sm-10 d-flex align-items-center part2'>
-                                <PlaceDropDown />
+                            {locationList.length > 0 ? (
+                            <PlaceDropDown />
+                            ) : (
+                            <span>Loading regions...</span>
+                            )}
+                                
                                 <SearchBox />
                                 
             

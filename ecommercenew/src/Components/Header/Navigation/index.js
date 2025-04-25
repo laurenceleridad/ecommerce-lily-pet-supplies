@@ -12,9 +12,9 @@ const Navigation = ()=>{
                 <div className='row'>
                     <div className='col-sm-2 nav1'>
                         <Button className='allCat align-items-center'>
-                            <span className="icon1 mr-2"><IoMenuOutline /></span>
-                            <span class='text'>ALL CATEGORIES</span>
-                            <span className="icon2 ml-2"><FaAngleDown /></span>
+                            <span className='icon1 mr-2'><IoMenuOutline /></span>
+                            <span className='text'>ALL CATEGORIES</span>
+                            <span className='icon2 ml-2'><FaAngleDown /></span>
                             </Button>
                     </div>
                     <div className='col-sm-10 nav2 d-flex align-items-center'>
