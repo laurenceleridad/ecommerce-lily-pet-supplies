@@ -66,7 +66,7 @@ const PlaceDropDown = () => {
                         {/* Show selected location or default message */}
                         {selectedLocId !== null
                             ? shortenRegionName(context.locationList.find(item => item.id === selectedLocId)?.name)
-                            : "Select a Region"}
+                            : "Select Region"}
                     </span>
                 </div>
                 <span className="ml-auto"><FaAngleDown /></span>
