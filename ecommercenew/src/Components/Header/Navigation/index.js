@@ -3,6 +3,7 @@ import { Button } from '@mui/material';
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { FaAngleRight } from "react-icons/fa6";
 
 
 
@@ -23,9 +24,33 @@ const Navigation = ()=>{
                             </Button>
                             <div className={`subsideNav ${isOpenSubsideVal===true ? 'open' : ''}`}>
                                 <ul>
-                                    <li><Link to="/"><Button>Food</Button></Link></li>
-                                    <li><Link to="/"><Button>Hygiene</Button></Link></li>
-                                    <li><Link to="/"><Button>Toys</Button></Link></li>
+                                    <li><Link to="/"><Button>Food<FaAngleRight className="ml-auto" /></Button></Link>
+                                        <div className='submenu'>
+                                            <Link to="/"><Button>Dry Dog Food</Button></Link>
+                                            <Link to="/"><Button>Wet Dog Food</Button></Link>
+                                            <Link to="/"><Button>Dry Cat Food</Button></Link>
+                                            <Link to="/"><Button>Wet Cat Food</Button></Link>
+                                            <Link to="/"><Button>Milk</Button></Link>
+                                        </div>
+                                    </li>
+                                    <li><Link to="/"><Button>Hygiene<FaAngleRight className="ml-auto" /></Button></Link>
+                                        <div className='submenu'>
+                                            <Link to="/"><Button>Shampoo</Button></Link>
+                                            <Link to="/"><Button>Dry Shampoo</Button></Link>
+                                            <Link to="/"><Button>Toothbrush</Button></Link>
+                                            <Link to="/"><Button>Toothpaste</Button></Link>
+                                            <Link to="/"><Button>Wet Tissue</Button></Link>
+                                        </div>
+                                    </li>
+                                    <li><Link to="/"><Button>Toys<FaAngleRight className="ml-auto" /></Button></Link>
+                                        <div className='submenu'>
+                                            <Link to="/"><Button>Dog Toys</Button></Link>
+                                            <Link to="/"><Button>Cat Toys</Button></Link>
+                                            <Link to="/"><Button>Puppy Toys</Button></Link>
+                                            <Link to="/"><Button>Cat Tower</Button></Link>
+                                            <Link to="/"><Button>Dog Slinky</Button></Link>
+                                        </div>
+                                    </li>
                                     <li><Link to="/"><Button>Treats</Button></Link></li>
                                     <li><Link to="/"><Button>Beds</Button></Link></li>
                                     <li><Link to="/"><Button>Essentials</Button></Link></li>

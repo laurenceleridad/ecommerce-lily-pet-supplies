@@ -4,7 +4,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
 
-body{font-family: "Lato", sans-serif; font-size: 14px;}
+body{font-family: "Lato", sans-serif; font-size: 14px; color: rgba(0,0,0,0.8);}
 
 .bg-green{background: #008900;}
 
@@ -13,6 +13,10 @@ body{font-family: "Lato", sans-serif; font-size: 14px;}
         max-width: 1200px;
     }
 }
+
+.cursor{cursor: pointer;}
+.text-light{color: #848484 !important;}
+.text-sml{font-size: 14px;}
 
 ::-webkit-scrollbar{width: 8px !important; height: 8px !important;}
 ::-webkit-scrollbar-thumb{background: #ccc !important;}
@@ -72,8 +76,16 @@ nav .nav1 .catFill .subsideNav{width: 100%; height: 0px; opacity: 0; background:
 
 nav .nav1 .catFill .subsideNav.open{height: auto; opacity: 1; visibility: inherit;}
 
-nav .nav1 .catFill .subsideNav ul li{width: 100%; list-style: none; padding: 0px 15px; }
+nav .nav1 .catFill .subsideNav ul li{width: 100%; list-style: none; padding: 0px 10px; }
 nav .nav1 .catFill .subsideNav ul li button{color: #000; width: 100%; justify-content: flex-start !important; text-transform: capitalize !important;}
+nav .nav1 .catFill .subsideNav ul li button svg{font-size: 12px; opacity: 0.6;}
+
+nav .nav1 .catFill .subsideNav ul li{position: static;}
+nav .nav1 .catFill .subsideNav ul li .submenu{position: absolute; top: 0px; left: 105%; width: 250px; height: 100%; background: #fff; z-index: 100; opacity: 0; visibility: hidden; transition: all 0.2s ease-in-out; border-left: 1px solid rgba(0,0,0,0.1); padding: 20px;}
+
+nav .nav1 .catFill .subsideNav ul li:hover .submenu{opacity: 1; visibility: inherit; left: 100%;}
+nav .nav1 .catFill .subsideNav ul li:hover .submenu button{border-radius: 0px !important;}
+
 
 nav .allCat{background: #73da4c; padding: 10px 15px !important; border-radius: 25px !important;}
 nav .allCat *{color: #fff;}
@@ -99,11 +111,86 @@ nav .nav2 ul li .submenu a button:hover{background: #f1f1f1 !important;}
 
 nav .nav2 ul li:hover .submenu{opacity:1; visibility: inherit; top: 100%;}
 
-.homeBannerSection{position: relative; overflow: hidden;}
+.homeBannerSection{position: relative; overflow: hidden; cursor:pointer;}
 .homeBannerSection *{outline: none !important;}
-.homeBannerSection .slick-arrow{position: absolute; top: 45%; z-index: 100; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #5a5959; border-radius: 100%; font-family: FontAwesome !important; font-weight: bold;}
-.homeBannerSection .slick-arrow.slick-next{right: 25px !important;}
-.homeBannerSection .slick-arrow.slick-prev{left: 25px !important;}
+.homeBannerSection .slick-arrow {
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.9); /* Almost full white with slight transparency */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    opacity: 1;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3); /* subtle shadow */
+    transition: background 0.3s ease;
+  }
+  
+  .homeBannerSection .slick-arrow:hover {
+    background: rgba(255, 255, 255, 1); /* full white on hover */
+  }
+  
+  .homeBannerSection .slick-prev {
+    left: 15px !important;
+  }
+  
+  .homeBannerSection .slick-next {
+    right: 15px !important;
+  }
+  
+  /* Remove default font */
+.homeBannerSection .slick-prev::before,
+.homeBannerSection .slick-next::before {
+  font-family: none;
+  font-size: 17px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.7;
+}
 
-.homeBannerSection .slick-arrow.slick-next::before{font-family: FontAwesome; color: #fff;}
-.homeBannerSection .slick-arrow.slick-prev::before{font-family: FontAwesome; color: #fff;}
+.homeBannerSection .slick-prev::before {
+  content: '❮'; /* Unicode nicer left arrow */
+}
+
+.homeBannerSection .slick-next::before {
+  content: '❯'; /* Unicode nicer right arrow */
+}
+
+.petProducts{padding: 25px 0px; width: 100%;}
+.petProducts .banner{width: 100%; border-radius: 7px; overflow: hidden;}
+
+.productRow .hd{font-size: 25px; font-weight: 600;}
+
+.viewAllBtn{padding: 5px 25px !important; background: #fff; border: 1px solid rgba(0,0,0,0.1) !important; border-radius: 30px !important; color: #424242 !important; font-weight: 600; text-transform: capitalize !important;}
+
+.viewAllBtn svg{font-size: 20px;}
+
+.imgFill {
+    width: 100%; /* Make the image container full width */
+    height: 150px; /* Set a fixed height or adjust as needed */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+}
+
+.imgFill img {
+    max-width: 70%; /* Control the image width (adjust as needed) */
+    max-height: 100%; /* Ensure the image doesn't exceed container height */
+    object-fit: contain; /* Retain aspect ratio while scaling down */
+}
+
+.productItem{width: 100%; height: auto; border: 1px solid rgba(0,0,0,0.1); cursor: pointer;}
+.productItem .info{padding: 15px;}
+.productItem .info h4{font-size: 15px; font-weight: 600;}
+
+.productItem .info .oldPrice{font-size: 16px; font-weight: bold; color: rgba(0,0,0,0.3); text-decoration: line-through;}
+.productItem .info .netPrice{font-size: 16px; font-weight: bold;}
+
+.product_row .item{border-right: 1px solid transparent !important;}
+.product_row .swiper-slide:last-child .productItem{ border: 1px solid rgba(0,0,0,0.1) !important;}
+
+.swiper{padding-right: 1px !important;}
