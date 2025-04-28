@@ -1,5 +1,5 @@
 import HomeBanner from "../../Components/HomeBanner";
-import aclily2 from '../../assets/images/aclily2.jpg';
+import propets1 from '../../assets/images/propets1.jpg';
 import { Button } from '@mui/material';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import React from "react";
@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import Rating from '@mui/material/Rating';
+import ProductItem from "../../Components/ProductItem";
 
 const Home =()=>{
 
@@ -29,7 +29,7 @@ const Home =()=>{
                     <div className="row">
                         <div className="col-md-3">
                             <div className="banner">
-                                <img src={aclily2} className="cursor w-100" alt=''/>
+                                <img src={propets1} className="cursor w-100" alt=''/>
                             </div>
                             
                         </div>
@@ -54,116 +54,80 @@ const Home =()=>{
                                 className="mySwiper"
                                  >
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                             <div className="imgFill">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7tIsNAI-avzmGlypHBr7MSIw-ltXDD94QA&s" className="w-100" alt=''/>
-                                            </div>
-                                            <div className="info">
-                                            <h4>Special Dog Food Adult Lamb & Rice</h4>
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className='mt-2 mb-2' name="read-only" value={5} readOnly size="small" precision={0.5} />
-
-                                            <div className="d-flex">
-                                                <span className="oldPrice">P 1299.00</span>
-                                                <span className="netPrice text-danger ml-2">P 1150.00</span>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
                                     
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                             <div className="imgFill">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7tIsNAI-avzmGlypHBr7MSIw-ltXDD94QA&s" className="w-100" alt=''/>
-                                            </div>
-                                            <div className="info">
-                                            <h4>Special Dog Food Adult Lamb & Rice</h4>
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className='mt-2 mb-2' name="read-only" value={5} readOnly size="small" precision={0.5} />
-
-                                            <div className="d-flex">
-                                                <span className="oldPrice">P 1299.00</span>
-                                                <span className="netPrice text-danger ml-2">P 1150.00</span>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                             <div className="imgFill">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7tIsNAI-avzmGlypHBr7MSIw-ltXDD94QA&s" className="w-100" alt=''/>
-                                            </div>
-                                            <div className="info">
-                                            <h4>Special Dog Food Adult Lamb & Rice</h4>
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className='mt-2 mb-2' name="read-only" value={5} readOnly size="small" precision={0.5} />
-
-                                            <div className="d-flex">
-                                                <span className="oldPrice">P 1299.00</span>
-                                                <span className="netPrice text-danger ml-2">P 1150.00</span>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                             <div className="imgFill">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7tIsNAI-avzmGlypHBr7MSIw-ltXDD94QA&s" className="w-100" alt=''/>
-                                            </div>
-                                            <div className="info">
-                                            <h4>Special Dog Food Adult Lamb & Rice</h4>
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className='mt-2 mb-2' name="read-only" value={5} readOnly size="small" precision={0.5} />
-
-                                            <div className="d-flex">
-                                                <span className="oldPrice">P 1299.00</span>
-                                                <span className="netPrice text-danger ml-2">P 1150.00</span>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                             <div className="imgFill">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7tIsNAI-avzmGlypHBr7MSIw-ltXDD94QA&s" className="w-100" alt=''/>
-                                            </div>
-                                            <div className="info">
-                                            <h4>Special Dog Food Adult Lamb & Rice</h4>
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className='mt-2 mb-2' name="read-only" value={5} readOnly size="small" precision={0.5} />
-
-                                            <div className="d-flex">
-                                                <span className="oldPrice">P 1299.00</span>
-                                                <span className="netPrice text-danger ml-2">P 1150.00</span>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
 
                                     <SwiperSlide>
-                                        <div className="item productItem">
-                                             <div className="imgFill">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7tIsNAI-avzmGlypHBr7MSIw-ltXDD94QA&s" className="w-100" alt=''/>
-                                            </div>
-                                            <div className="info">
-                                            <h4>Special Dog Food Adult Lamb & Rice</h4>
-                                            <span className="text-success d-block">In Stock</span>
-                                            <Rating className='mt-2 mb-2' name="read-only" value={5} readOnly size="small" precision={0.5} />
-
-                                            <div className="d-flex">
-                                                <span className="oldPrice">P 1299.00</span>
-                                                <span className="netPrice text-danger ml-2">P 1150.00</span>
-                                            </div>
-                                            </div>
-                                        </div>
+                                        <ProductItem/>
                                     </SwiperSlide>
 
-                                    
                                 </Swiper>
                             </div>
+
+
+                            
+                            <div className="d-flex align-items-center mt-5">
+                                <div className="info w-75">
+                                    <h3 className="mb-0 hd">NEW PRODUCTS</h3>
+                                    <p className="text-light text-sml mb-0">Check out our new products and stocks available.</p>
+                                </div>
+
+                                <Button className="viewAllBtn ml-auto">View All<IoIosArrowRoundForward/></Button>
+                            </div>
+
+                            <div className="product_row w-100 mt-4">
+                                 <Swiper
+                                slidesPerView={4}
+                                spaceBetween={0}
+                                pagination={{
+                                clickable: true,
+                                }}
+                                modules={[Navigation]}
+                                className="mySwiper"
+                                 >
+                                    <SwiperSlide>
+                                        <ProductItem/>
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide>
+                                        <ProductItem/>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <ProductItem/>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <ProductItem/>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <ProductItem/>
+                                    </SwiperSlide>
+
+                                    <SwiperSlide>
+                                        <ProductItem/>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                            </div>
+
                         </div>
                     </div>
                 </div>
